@@ -53,14 +53,14 @@ export default function Header() {
                         </div>
                       </div>
                     </div>
-                    <div className="hidden md:block">
+                    {/* <div className="hidden md:block">
                       <div className="ml-4 flex items-center md:ml-6">
                         <button className="bg-gray-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                           <span className="sr-only">View notifications</span>
                           <BellIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
 
-                        {/* Profile dropdown */}
+                        
                         <Menu as="div" className="ml-3 relative">
                           {({ open }) => (
                             <>
@@ -109,9 +109,9 @@ export default function Header() {
                           )}
                         </Menu>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="-mr-2 flex md:hidden">
-                      {/* Mobile menu button */}
+                     
                       <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
@@ -130,7 +130,6 @@ export default function Header() {
                   {navigation.map((item, itemIdx) =>
                     itemIdx === 0 ? (
                       <Fragment key={item}>
-                        {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                         <a href="/" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
                           {item}
                         </a>
@@ -146,8 +145,8 @@ export default function Header() {
                     )
                   )}
                 </div>
-                <div className="pt-4 pb-3 border-t border-gray-700">
-                  <div className="flex items-center px-5">
+                {/* <div className="pt-4 pb-3 border-t border-gray-700"> */}
+                  {/* <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
                       <img
                         className="h-10 w-10 rounded-full"
@@ -163,8 +162,8 @@ export default function Header() {
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
-                  </div>
-                  <div className="mt-3 px-2 space-y-1">
+                  </div> */}
+                  {/* <div className="mt-3 px-2 space-y-1">
                     {profile.map((item) => (
                       <a
                         key={item}
@@ -174,8 +173,8 @@ export default function Header() {
                         {item}
                       </a>
                     ))}
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
               </Disclosure.Panel>
             </>
           )}
