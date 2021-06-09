@@ -1,16 +1,15 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure} from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import './index.css';
-import Cards from "../Cards/Cards";
 import Form from "./Form.js";
 
 const navigation = ['Home', 'Zillow', 'About', 'Contact']
-const profile = ['Your Profile', 'Settings', 'Sign out']
+// const profile = ['Your Profile', 'Settings', 'Sign out']
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 export default function Header() {
   return (
@@ -53,6 +52,11 @@ export default function Header() {
                         </div>
                       </div>
                     </div>
+                    <div className="ml-3">
+                <div className="text-base font-medium leading-none text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-flex items-center" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+</svg>: (801)380-4617</div>
+                </div>
                     {/* <div className="hidden md:block">
                       <div className="ml-4 flex items-center md:ml-6">
                         <button className="bg-gray-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -191,7 +195,7 @@ export default function Header() {
           {/* Replace with your content */}
           <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
             <Form />
-            <Cards />
+            
   {/* <div id="zillow-large-search-box-widget-container"><h2 id="zillow-2">Find Homes</h2><div style={{float:"right"}}><a href="https://www.zillow.com/" target="_blank" rel="noreferrer"><img alt="Zillow Real Estate Information" style={{border:0}} src="https://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/images/powered-by-zillow.gif"></img></a></div><iframe scrolling="no" src="https://www.zillow.com/widgets/search/LargeSearchBoxWidget.htm?did=zillow-large-search-box-iframe-widget&type=iframe&rgname=Seattle+WA&shvi=yes" width="430" frameborder="0" height="400"></iframe><table id="zillow-tnc-widget-footer-links" width="100%"><tbody style={{margin:0 ,padding:0}}><tr style={{margin:0, padding:0}}><td style={{fontWeight:"bold", fontSize:10, color:"#555", textAlign:"left", margin:0, padding:0}}>QUICK LINKS:</td></tr><tr style={{margin:0, padding:0}}><td style={{margin:0, padding:0}}><span id="widgetFooterLink" className="regionBasedLink"><a href="https://www.zillow.com/salt-wa/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}><span className="region">Seattle</span> Real Estate Listing</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-rates/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Mortgage Rates</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/refinance/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Refinancing</a></span></td></tr><tr style={{margin:0, padding:0}}><td style={{margin:0, padding:0}}><span id="widgetFooterLink" className="regionBasedLink"><a href="https://www.zillow.com/seattle-wa/foreclosures/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}><span className="region">Seattle</span> Foreclosures</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-calculator/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Mortgage Calculators</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-rates/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Purchase Loans</a></span></td></tr></tbody></table></div> */}
             {/* <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" /> */}
           </div>

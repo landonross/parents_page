@@ -3,29 +3,29 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
 
 const people = [
   {
-    name: 'Jane Cooper',
-    title: 'Regional Paradigm Technician',
-    role: 'Admin',
-    email: 'janecooper@example.com',
-    telephone: '+1-202-555-0170',
+    name: 'Bonnie Ross',
+    title: 'Real Estate Professional',
+    role: 'Active',
+    email: 'bonnie.ross@gmail.com',
+    telephone: '+1-801-380-4617',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+      'https://www.century21.com/c21/photo/240x320/c21.azureedge.net/1103i103/9t6b2x8ejmby4g27d8kbfrg717i103',
   },
   {
-    name: 'John Greg',
-    title: 'Regional Paradigm Technician',
-    role: 'Admin',
-    email: 'janecooper@example.com',
-    telephone: '+1-202-555-0170',
+    name: 'Tracy Ross',
+    title: 'Real Estate Professional',
+    role: 'Active',
+    email: 'tracy.ross@gmail.com',
+    telephone: '+1-801-372-1514',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+      'https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/116716204_10217919043542895_7249108073556004207_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=OlntzwdACxwAX9IA9zb&_nc_ht=scontent-lax3-1.xx&oh=940395a32791099dac945fe9868f66cc&oe=60E74AF0',
   },
   // More people...
 ]
 
 export default function Cards() {
   return (
-    <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
       {people.map((person) => (
         <li key={person.email} className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
           <div className="w-full flex items-center justify-between p-6 space-x-6">
@@ -57,7 +57,7 @@ export default function Cards() {
                   className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
                 >
                   <PhoneIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">Call</span>
+                  <span className="ml-3">Call: {person.telephone}</span>
                 </a>
               </div>
             </div>
