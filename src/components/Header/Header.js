@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import './index.css';
 import Form from "./Form.js";
 
-const navigation = ['Home', 'About', 'Contact']
+const navigation = ['About', 'FAQ', 'Contact']
 // const profile = ['Your Profile', 'Settings', 'Sign out']
 
 // function classNames(...classes) {
@@ -12,25 +12,6 @@ const navigation = ['Home', 'About', 'Contact']
 // }
 
 export default function Header() {
-  // const [error, setError] = useState(null);
-  // // const [isLoaded, setIsLoaded] = useState(false);
-  // const [items, setItems] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("https://api.bridgedataoutput.com/api/v2/zestimates?access_token=ClpFdXbMEWM49YTStFll")
-  //     .then(res => res.json())
-  //     .then(
-  //       (result) => {
-  //         // setIsLoaded(true);
-  //         setItems(result);
-  //       },
-
-  //       (error) => {
-  //         // setIsLoaded(true);
-  //         setError(error);
-  //       }
-  //     )
-  // }, [])
 
 
   return (
@@ -56,14 +37,14 @@ export default function Header() {
                             itemIdx === 0 ? (
                               <Fragment key={item}>
                                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                                <a href="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
+                                <a href={"#" + item} className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
                                   {item}
                                 </a>
                               </Fragment>
                             ) : (
                               <a
                                 key={item}
-                                href="/"
+                                href={"#" + item} 
                                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                               >
                                 {item}
@@ -214,7 +195,7 @@ export default function Header() {
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
           {/* Replace with your content */}
-          <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
+          <div className="bg-white rounded-lg shadow px-2 py-2 sm:px-6">
             <Form />
             
   {/* <div id="zillow-large-search-box-widget-container"><h2 id="zillow-2">Find Homes</h2><div style={{float:"right"}}><a href="https://www.zillow.com/" target="_blank" rel="noreferrer"><img alt="Zillow Real Estate Information" style={{border:0}} src="https://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/images/powered-by-zillow.gif"></img></a></div><iframe scrolling="no" src="https://www.zillow.com/widgets/search/LargeSearchBoxWidget.htm?did=zillow-large-search-box-iframe-widget&type=iframe&rgname=Seattle+WA&shvi=yes" width="430" frameborder="0" height="400"></iframe><table id="zillow-tnc-widget-footer-links" width="100%"><tbody style={{margin:0 ,padding:0}}><tr style={{margin:0, padding:0}}><td style={{fontWeight:"bold", fontSize:10, color:"#555", textAlign:"left", margin:0, padding:0}}>QUICK LINKS:</td></tr><tr style={{margin:0, padding:0}}><td style={{margin:0, padding:0}}><span id="widgetFooterLink" className="regionBasedLink"><a href="https://www.zillow.com/salt-wa/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}><span className="region">Seattle</span> Real Estate Listing</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-rates/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Mortgage Rates</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/refinance/" target="_blank" rel="noReferrer" style={{color:"#36b", fontFamily:"verdana,arial,sans-serif", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Refinancing</a></span></td></tr><tr style={{margin:0, padding:0}}><td style={{margin:0, padding:0}}><span id="widgetFooterLink" className="regionBasedLink"><a href="https://www.zillow.com/seattle-wa/foreclosures/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}><span className="region">Seattle</span> Foreclosures</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-calculator/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Mortgage Calculators</a></span></td><td style={{margin:0, padding:0}}><span id="widgetFooterLink"><a href="https://www.zillow.com/mortgage-rates/" target="_blank" rel="noReferrer" style={{color:"#36b", fontSize:"10px", margin:"0 5px 0 0", padding:0, textDecoration:"none"}}>Purchase Loans</a></span></td></tr></tbody></table></div> */}

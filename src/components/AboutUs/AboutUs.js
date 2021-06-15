@@ -2,10 +2,10 @@ import realtors from './img/couplePhoto.JPG';
 
 export default function Example() {
   return (
-    <div className="relative bg-gray-800">
-      <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/3">
+    <div className="relative bg-gray-800" id="About">
+      <div className="h-56 bg-gray-200 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/3">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-scale-down"
           src={realtors}
           alt=""
         />
