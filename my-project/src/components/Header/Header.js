@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import './index.css';
@@ -12,6 +12,27 @@ const navigation = ['Home', 'Zillow', 'About', 'Contact']
 // }
 
 export default function Header() {
+  const [error, setError] = useState(null);
+  // const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.bridgedataoutput.com/api/v2/zestimates?access_token=ClpFdXbMEWM49YTStFll")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          // setIsLoaded(true);
+          setItems(result);
+        },
+
+        (error) => {
+          // setIsLoaded(true);
+          setError(error);
+        }
+      )
+  }, [])
+
+
   return (
     <div>
       <div className="bg-gray-800 pb-32">
@@ -24,8 +45,8 @@ export default function Header() {
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
                         <img
-                          className="h-10 w-10"
-                          src="./btr.png"
+                          className="h-14 w-14"
+                          src="./TBR-Realtors.png"
                           alt="BTR"
                         />
                       </div>
