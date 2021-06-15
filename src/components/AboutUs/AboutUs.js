@@ -1,3 +1,4 @@
+import React from 'react';
 import realtors from './img/couplePhoto.JPG';
 
 export default function Example() {

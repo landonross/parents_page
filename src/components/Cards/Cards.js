@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import React from 'react';
 import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
 
 const people = [

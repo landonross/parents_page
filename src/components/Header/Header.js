@@ -1,7 +1,7 @@
+import React from 'react';
 import { Fragment} from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import './index.css';
 import Form from "./Form.js";
 
 const navigation = ['About', 'FAQ', 'Contact']
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="bg-gray-800 pb-32">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
-            <>
+            <div>
               <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div className="border-b border-gray-700">
                   <div className="flex items-center justify-between h-16 px-4 sm:px-0">
@@ -182,7 +182,7 @@ export default function Header() {
                   </div> */}
                 {/* </div> */}
               </Disclosure.Panel>
-            </>
+            </div>
           )}
         </Disclosure>
         <header className="py-10">

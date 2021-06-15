@@ -1,3 +1,4 @@
+import React from 'react';
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
 import house3 from "./img/house3.jpg";

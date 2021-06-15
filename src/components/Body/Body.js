@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
 import ContactUs from "../ContactUs/ContactUs.js";
@@ -37,7 +38,7 @@ export default function Example() {
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
-                  <>
+                  <div>
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
                         <span className="font-medium text-gray-900">{faq.question}</span>
@@ -52,7 +53,7 @@ export default function Example() {
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
                       <p className="text-base text-gray-500">{faq.answer}</p>
                     </Disclosure.Panel>
-                  </>
+                  </div>
                 )}
               </Disclosure>
             ))}
