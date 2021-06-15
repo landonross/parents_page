@@ -1,10 +1,10 @@
-import { Fragment, useState, useEffect } from 'react'
+import { Fragment} from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import './index.css';
 import Form from "./Form.js";
 
-const navigation = ['Home', 'Zillow', 'About', 'Contact']
+const navigation = ['Home', 'About', 'Contact']
 // const profile = ['Your Profile', 'Settings', 'Sign out']
 
 // function classNames(...classes) {
@@ -12,25 +12,25 @@ const navigation = ['Home', 'Zillow', 'About', 'Contact']
 // }
 
 export default function Header() {
-  const [error, setError] = useState(null);
-  // const [isLoaded, setIsLoaded] = useState(false);
-  const [items, setItems] = useState([]);
+  // const [error, setError] = useState(null);
+  // // const [isLoaded, setIsLoaded] = useState(false);
+  // const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    fetch("https://api.bridgedataoutput.com/api/v2/zestimates?access_token=ClpFdXbMEWM49YTStFll")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          // setIsLoaded(true);
-          setItems(result);
-        },
+  // useEffect(() => {
+  //   fetch("https://api.bridgedataoutput.com/api/v2/zestimates?access_token=ClpFdXbMEWM49YTStFll")
+  //     .then(res => res.json())
+  //     .then(
+  //       (result) => {
+  //         // setIsLoaded(true);
+  //         setItems(result);
+  //       },
 
-        (error) => {
-          // setIsLoaded(true);
-          setError(error);
-        }
-      )
-  }, [])
+  //       (error) => {
+  //         // setIsLoaded(true);
+  //         setError(error);
+  //       }
+  //     )
+  // }, [])
 
 
   return (
@@ -205,9 +205,9 @@ export default function Header() {
           )}
         </Disclosure>
         <header className="py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-white">Dashboard</h1>
-          </div>
+          {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-white">BTR Realtors</h1>
+          </div> */}
         </header>
       </div>
 

@@ -1,8 +1,9 @@
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
 import ContactUs from "../ContactUs/ContactUs.js";
-import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/outline'
+import AboutUs from '../AboutUs/AboutUs.js';
+import { Disclosure } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/outline';
 
 const faqs = [
   {
@@ -26,7 +27,8 @@ export default function Example() {
   return (
     <div>
         <Header />
-        <ContactUs />
+        <AboutUs />
+        
     <div className="bg-gray-50">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
@@ -58,6 +60,7 @@ export default function Example() {
         </div>
       </div>
     </div>
+    <ContactUs />
     <Footer />
     </div>
   )
