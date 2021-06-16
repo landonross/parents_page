@@ -1,0 +1,25 @@
+.toTop {
+    background-color: rgba(17, 24, 39);
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0 2px 15px 0 #000000;
+    outline: none;
+    z-index: 99;
+ }
+ 
+ .toTop:hover {
+    background-color: rgba(17, 24, 39);
+    box-shadow: 0 2px 20px 4px #6b0909;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    right: 37px;
+    bottom: 36px;
+ }

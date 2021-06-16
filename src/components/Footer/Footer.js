@@ -2,17 +2,18 @@ import React from 'react';
 
 const navigation = {
     main: [
-      { name: 'About', href: '#' },
+      { name: 'Home', href:'/'},
+      { name: 'About', href: '#About' },
     //   { name: 'Blog', href: '#' },
     //   { name: 'Jobs', href: '#' },
     //   { name: 'Press', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'FAQ', href: '#FAQ' },
+      { name: 'Contact Us', href: '#Contact' },
     ],
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/BTR-Realtors-748589728942909',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -25,7 +26,7 @@ const navigation = {
       },
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://www.instagram.com/bonnierossrealtor/',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -89,7 +90,7 @@ const navigation = {
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-white hover:text-gray-500">
+              <a key={item.name} href={item.href} className="text-white hover:text-gray-500" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>

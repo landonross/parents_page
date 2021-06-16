@@ -4,7 +4,7 @@ import Cards from "../Cards/Cards";
 export default function ContactUs() {
     return (
       <div id="Contact">
-      <div className="bg-white">
+      <div className="bg-gray-900">
       {/* Header */}
       <div className="relative pb-32 bg-gray-800">
         <div className="absolute inset-0">
@@ -25,7 +25,7 @@ export default function ContactUs() {
 
       {/* Overlapping cards */}
       <section
-        className="-mt-20 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+        className="-mt-40 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
         aria-labelledby="contact-heading"
       >
         <h2 className="sr-only" id="contact-heading">
@@ -35,7 +35,16 @@ export default function ContactUs() {
     </div>
 
     {/* lets work together portion */}
-    <div className="relative bg-white -mt-20">
+    <div className="relative bg-white -mt-96 sm:-mt-52">
+      <div className="lg:absolute lg:inset-0">
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="h-56 w-full object-cover lg:absolute lg:h-full"
+            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+            alt=""
+          />
+        </div>
+      </div>
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">

@@ -3,6 +3,7 @@ import { Fragment} from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Form from "./Form.js";
+import btr from './img/TBR-Realtors1.png'
 
 const navigation = ['About', 'FAQ', 'Contact']
 // const profile = ['Your Profile', 'Settings', 'Sign out']
@@ -26,8 +27,8 @@ export default function Header() {
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
                         <img
-                          className="h-14 w-14"
-                          src="./TBR-Realtors.png"
+                          className="h-12 w-12"
+                          src={btr}
                           alt="BTR"
                         />
                       </div>

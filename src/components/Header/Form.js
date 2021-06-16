@@ -8,22 +8,22 @@ import logo from './img/3D-Mockup.jpg';
 export default function Form() {
   return (
     <div>
-      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={house1} className="d-block w-100" alt="house1" />
+          <div className="carousel-item active" data-interval="10000">
+            <img src={house1} className="d-block w-100" alt="house1"/>
           </div>
-          <div className="carousel-item">
-            <img src={house2} className="d-block w-100" alt="house2" />
+          <div className="carousel-item" data-interval="10000">
+            <img src={house2} className="d-block w-100" alt="house2"/>
           </div>
-          <div className="carousel-item">
-            <img src={house3} className="d-block w-100" alt="house3" />
+          <div className="carousel-item" data-interval="10000">
+            <img src={house3} className="d-block w-100" alt="house3"/>
           </div>
-          <div className="carousel-item">
-            <img src={house4} className="d-block w-100" alt="house4" />
+          <div className="carousel-item" data-interval="10000">
+            <img src={house4} className="d-block w-100" alt="house4"/>
           </div>
-          <div className="carousel-item">
-            <img src={logo} className="d-block w-100" alt="logo" />
+          <div className="carousel-item" data-interval="10000">
+            <img src={logo} className="d-block w-100" alt="logo"/>
           </div>
         </div>
         <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

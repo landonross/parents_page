@@ -5,6 +5,7 @@ import ContactUs from "../ContactUs/ContactUs.js";
 import AboutUs from '../AboutUs/AboutUs.js';
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const faqs = [
   {
@@ -28,6 +29,7 @@ export default function Example() {
   return (
     <div>
         <Header />
+        <ScrollToTop />
         <AboutUs/>
         
     <div className="bg-gray-50" id="FAQ">
