@@ -4,6 +4,7 @@ import house2 from "./img/house2.jpg";
 import house3 from "./img/house3.jpg";
 import house4 from "./img/nice-house.jpg";
 import logo from './img/3D-Mockup.jpg';
+// import logo1 from './img/century21.jpg';
 
 export default function Form() {
   return (
@@ -25,6 +26,9 @@ export default function Form() {
           <div className="carousel-item" data-interval="10000">
             <img src={logo} className="d-block w-100" alt="logo"/>
           </div>
+          {/* <div className="carousel-item" data-interval="10000">
+            <img src={logo1} className="d-block w-100" alt="logo"/>
+          </div> */}
         </div>
         <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -3,7 +3,7 @@ import { Fragment} from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Form from "./Form.js";
-import btr from './img/TBR-Realtors1.png'
+import btr from './img/TransparentCentury.png'
 
 const navigation = ['About', 'FAQ', 'Contact']
 // const profile = ['Your Profile', 'Settings', 'Sign out']
@@ -187,8 +187,18 @@ export default function Header() {
           )}
         </Disclosure>
         <header className="py-10">
+        <div className="text-center">
+          {/* <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Pricing</h2> */}
+          <p className="mt-1 text-4xl font-extrabold text-gray-200 sm:text-5xl sm:tracking-tight lg:text-6xl">
+            BTR Realtors
+          </p>
+          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
+            Invest in your future today! We make the home buying process as easy and pain free as possible, every step of the way!
+          </p>
+        </div>
           {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold text-white">BTR Realtors</h1>
+            <h5 className="text-white">Here to help you get into your dream home!</h5>
           </div> */}
         </header>
       </div>

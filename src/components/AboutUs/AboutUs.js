@@ -16,9 +16,9 @@ export default function Example() {
           <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">First class realtors</h2>
           <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Who are BTR realtors?</p>
           <p className="mt-3 text-lg text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
-            scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum
-            tincidunt duis.
+            Our love of real estate began while working in the construction industry. 
+            We love helping people find what they are looking for as well as helping owners sell their property in a timely manner.  
+            We work together in order to help ensure the process runs smoothly for you and it allows us to be available to assist you within your availability window!
           </p>
         </div>
       </div>

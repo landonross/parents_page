@@ -1,8 +1,19 @@
 import React from 'react';
 import Cards from "../Cards/Cards";
 import office from './img/office.jpg';
+import { useForm } from '@formspree/react';
+import SubmitForm from '../SubmitForm/SubmitForm.js';
 
 export default function ContactUs() {
+  const [state, handleSubmit] = useForm("meqvkrgv");
+  if (state.succeeded) {
+      return (
+        <div>
+      <SubmitForm />
+      <ContactUs />
+      </div>
+        );
+  }
     return (
       <div id="Contact">
       <div className="bg-gray-900">
@@ -19,7 +30,7 @@ export default function ContactUs() {
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Get in touch</h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-          Whether you are looking for a new home or looking to sell your current home. We are always a phone call away to assist you in your goals!
+          Whether you are looking for a new place to call home or looking to sell your current home. We are always a phone call away to assist you in your goals!
           </p>
         </div>
       </div>
@@ -53,7 +64,7 @@ export default function ContactUs() {
             <p className="mt-4 text-lg text-gray-500 sm:mt-3">
               We’d love to hear from you! Send us a message using the following form, or email us by simply clicking the email button above.
             </p>
-            <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
                   First name

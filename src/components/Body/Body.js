@@ -9,14 +9,24 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const faqs = [
   {
-    question: "I've never bought a house before, what do I do?",
+    question: "What is the first step in buying a home?",
     answer:
-      "No problem! Give us a call, or send us an email and we will guide you through the home buying process every step of the way. We can also help you find lenders who can provide you with how much you qualify for!",
+      "Best first practice is to talk with a lender to find out what you qualify for. Once you have an idea of what you can afford, contact us and we will help find you something that will fit your budget that you will hopefully love!",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "What area do you cover?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We are licensed in the state of Utah and we can help you with your real estate needs all across the state. Our main area of focus is the Uintah Basin from Jenson to Fruitland and everywhere in between!",
+  },
+  {
+    question: "I've never bought a house before, what do I do?",
+    answer:
+      "No problem! Give us a call, or send us an email and we will guide you through the home buying process every step of the way. We can also help you find lenders who can provide you with how much you qualify for if needed!",
+  },
+  {
+    question: "How much do you charge buyers?",
+    answer:
+      "The seller typically pays the fees, so buyers don't pay anything.",
   },
   // More questions...
 ]

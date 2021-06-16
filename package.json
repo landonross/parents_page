@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
+    "@formspree/react": "^2.2.3",
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/forms": "^0.3.3",
@@ -17,7 +18,7 @@
     "react-scroll-to-top": "^1.0.5",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://landonross.github.io/parents_page/",
+  "homepage": "https://btrrealty.com",
   "scripts": {
     "start": "craco start",
     "build": "craco build",

@@ -5,18 +5,18 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
 const people = [
   {
     name: 'Bonnie Ross',
-    title: 'Real Estate Professional',
+    title: 'Century21 Real Estate Professional',
     role: 'Active',
-    email: 'bonnie.ross@gmail.com',
+    email: 'ross.bonnie.m@gmail.com',
     telephone: '+1-801-380-4617',
     imageUrl:
       'https://www.century21.com/c21/photo/240x320/c21.azureedge.net/1103i103/9t6b2x8ejmby4g27d8kbfrg717i103',
   },
   {
     name: 'Tracy Ross',
-    title: 'Real Estate Professional',
+    title: 'Century21 Real Estate Professional',
     role: 'Active',
-    email: 'tracy.ross@gmail.com',
+    email: 'twross5@gmail.com',
     telephone: '+1-801-372-1514',
     imageUrl:
       'https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/116716204_10217919043542895_7249108073556004207_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=OlntzwdACxwAX9IA9zb&_nc_ht=scontent-lax3-1.xx&oh=940395a32791099dac945fe9868f66cc&oe=60E74AF0',
