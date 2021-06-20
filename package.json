@@ -18,7 +18,7 @@
     "react-scroll-to-top": "^1.0.5",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "www.btrrealty.com",
+  "homepage": "https://landonross.github.io/parents_page/",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
